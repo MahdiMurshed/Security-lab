@@ -1,5 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
+// Steps
+// 1. **Collect Cipher Text**: Obtain the encrypted text that you want to decrypt.
+// 2. **Calculate Letter Frequencies**: Count the occurrence of each letter in the encrypted text. Create a frequency table that shows how many times each letter appears.
+// 3. **Compare with Expected Frequencies**: Compare the letter frequencies in the encrypted text with the expected frequencies of letters in the language. For example, in English, the letter 'E' is the most frequently used letter, followed by 'T', 'A', 'O', etc. You can find tables of expected letter frequencies for different languages online.
+// 4. **Identify High-Frequency Letters**: Identify the letters with the highest frequencies in the encrypted text. These letters are likely to correspond to the most common letters in the language.
+// 5. **Guess Potential Mappings**: Based on the identified high-frequency letters, make educated guesses about their potential mappings. For example, if 'X' is the most frequent letter in the encrypted text and 'E' is the most frequent letter in the English language, you might assume that 'X' corresponds to 'E'.
+// 6. **Look for Patterns**: Look for patterns in the encrypted text. Common two-letter words like 'is', 'an', 'it', 'in', etc., are great starting points. Also, look for common suffixes, prefixes, or other patterns that might help you identify more letters.
 
 // Function to calculate letter frequencies in the given text
 unordered_map<char, int> calculateLetterFrequencies(const string& text) {
