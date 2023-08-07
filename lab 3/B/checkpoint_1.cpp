@@ -64,7 +64,7 @@ int main() {
 
     cout << "length text: " << plaintext.length() << ", "<<plained.length() << endl;
 
-    cout << "Decrypted text: " << decryptVigenereCipher(plained, key) << endl;
+    cout << "Encrypted text: " << encryptVigenereCipher(plained, key) << endl;
 
     return 0;
 }
