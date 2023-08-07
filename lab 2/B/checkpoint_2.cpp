@@ -11,7 +11,7 @@ using namespace std;
 // Function to calculate letter frequencies in the given text
 unordered_map<char, int> calculateLetterFrequencies(const string& text) {
     int sz = text.size();
-     cout << "Size: " << sz << endl;
+    cout << "Size: " << sz << endl;
     unordered_map<char, int> frequencies;
     for (char ch : text) {
         if (isalpha(ch)) {
