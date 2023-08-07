@@ -81,6 +81,7 @@ int main(){
 
     for(int i = 0; i< 196; i++){
         for(int j = 0; j<3;j++){
+            cout<<cipherMatrix[j][i]<<" ";
             cipherText.push_back(cipherMatrix[j][i] + 'a');
         }
     }
